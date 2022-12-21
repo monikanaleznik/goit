@@ -1,0 +1,237 @@
+$white: #fff;
+$pink: #f38181;
+$yellow: #fce38a;
+$green: #eaffd0;
+$blue: #95e1d3;
+$platinum: #e5e5e5;
+$grey: #999999;
+$dark-grey: #333333;
+
+body {
+	max-width: 1920px;
+	width: 100%;
+	background: $white;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-areas:
+		"header"
+		"content"
+		"footer";
+}
+
+.section__main {
+	width: 100%;
+	height: auto;
+	background: linear-gradient(to bottom, rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)) center,
+		url("img/bird.png") center no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.header {
+		color: $white;
+		font-family: "Montserrat", sans-serif;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-transform: uppercase;
+		.nav__logo {
+			font-size: 30px;
+			font-weight: 700;
+			cursor: pointer;
+		}
+		.navigation {
+			ul {
+				display: flex;
+				justify-content: space-evenly;
+				max-width: 700px;
+				width: 100%;
+				li {
+					list-style: none;
+					font-size: 14px;
+					width: 100px;
+					text-align: center;
+					cursor: pointer;
+					.nav__link {
+						padding: 0 0 10px 0;
+						&:hover {
+							border-bottom: 3px solid $yellow;
+						}
+					}
+				}
+			}
+		}
+		.header__search {
+			cursor: pointer;
+		}
+	}
+	.title__main {
+		color: $white;
+		font-size: 72px;
+		font-weight: 400;
+		font-family: "Kaushan Script";
+		text-transform: capitalize;
+		.title__main--detail {
+			font-size: 150px;
+			font-family: "Montserrat", sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+	.button {
+		color: $white;
+		cursor: pointer;
+		border: 2px solid $white;
+		background-color: initial;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		width: 160px;
+		height: 40px;
+		margin: 40px 0 175px;
+	}
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 23px;
+	text-transform: uppercase;
+	text-align: center;
+	color: $dark-grey;
+	.title__break {
+		background-color: $pink;
+		width: 60px;
+		height: 4px;
+		margin: 30px auto;
+	}
+	span {
+		font-family: "Kaushan Script";
+		font-size: 24px;
+		text-transform: capitalize;
+	}
+}
+
+.ourWork {
+	.ourWork__content {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.ourWork__box {
+			max-width: 350px;
+			width: 100%;
+			display: flex;
+			.ourWork__img {
+				margin: 20px;
+				width: 50px;
+			}
+			.ourWork__text {
+				.ourWork__box-title {
+					font-family: "Montserrat", sans-serif;
+					text-transform: uppercase;
+					font-size: 14px;
+					margin: 20px 0 15px;
+				}
+				.ourWork__box-description {
+					font-style: normal;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	color: $grey;
+	font-size: 15px;
+	text-align: center;
+	font-style: normal;
+}
+.section__ourTeam {
+	margin: 100px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	.ourTeam__paragraph {
+		margin: 0 0 100px 0;
+	}
+	.ourTeam {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.ourTeam__person {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.ourTeam__person--foto {
+				margin: 20px;
+				background-color: $blue;
+				width: 380px;
+				bottom: 0;
+				left: 0;
+				-moz-transition: 0.4s;
+				-o-transition: 0.4s;
+				transition: 0.4s;
+				position: relative;
+				&:hover {
+					bottom: 4px;
+					right: 4px;
+					background: linear-gradient(to bottom, rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
+				}
+			}
+			.ourTeam__person--name {
+				font-family: "Montserrat", sans-serif;
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: $dark-grey;
+				padding: 0 0 10px 0;
+			}
+			.ourTeam__person--position {
+				font-family: "Roboto", sans-serif;
+				font-size: 15px;
+				color: $grey;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.footer {
+	font-size: 14px;
+	font-weight: 700;
+	color: $dark-grey;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	font-family: "Montserrat", sans-serif;
+	border-top: 1px solid $platinum;
+	padding: 10px 0;
+	.footer__link {
+		color: $pink;
+	}
+	.footer__newsletter {
+		.footer__input {
+			height: 40px;
+			width: 230px;
+			font-style: italic;
+			border: 1px solid $grey;
+		}
+		.footer__button {
+			color: $white;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			background-color: $blue;
+			border: none;
+			width: 150px;
+			height: 40px;
+			cursor: pointer;
+		}
+	}
+}

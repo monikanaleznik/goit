@@ -1,0 +1,43 @@
+body { max-width: 1920px; width: 100%; background: #fff; margin: 0 auto; }
+
+.grid { display: grid; grid-template-areas: "header" "content" "footer"; }
+
+.section__main { width: 100%; height: auto; background: linear-gradient(to bottom, rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)) center, url("img/bird.png") center no-repeat; display: flex; flex-direction: column; align-items: center; }
+.section__main .header { color: #fff; font-family: "Montserrat", sans-serif; display: flex; justify-content: space-around; align-items: center; text-transform: uppercase; }
+.section__main .header .nav__logo { font-size: 30px; font-weight: 700; cursor: pointer; }
+.section__main .header .navigation ul { display: flex; justify-content: space-evenly; max-width: 700px; width: 100%; }
+.section__main .header .navigation ul li { list-style: none; font-size: 14px; width: 100px; text-align: center; cursor: pointer; }
+.section__main .header .navigation ul li .nav__link { padding: 0 0 10px 0; }
+.section__main .header .navigation ul li .nav__link:hover { border-bottom: 3px solid #fce38a; }
+.section__main .header .header__search { cursor: pointer; }
+.section__main .title__main { color: #fff; font-size: 72px; font-weight: 400; font-family: "Kaushan Script"; text-transform: capitalize; }
+.section__main .title__main .title__main--detail { font-size: 150px; font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; text-align: center; }
+.section__main .button { color: #fff; cursor: pointer; border: 2px solid #fff; background-color: initial; text-transform: uppercase; font-size: 11px; font-family: "Montserrat", sans-serif; font-weight: 700; width: 160px; height: 40px; margin: 40px 0 175px; }
+
+.title { font-family: "Montserrat", sans-serif; font-size: 23px; text-transform: uppercase; text-align: center; color: #333333; }
+.title .title__break { background-color: #f38181; width: 60px; height: 4px; margin: 30px auto; }
+.title span { font-family: "Kaushan Script"; font-size: 24px; text-transform: capitalize; }
+
+.ourWork .ourWork__content { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.ourWork .ourWork__content .ourWork__box { max-width: 350px; width: 100%; display: flex; }
+.ourWork .ourWork__content .ourWork__box .ourWork__img { margin: 20px; width: 50px; }
+.ourWork .ourWork__content .ourWork__box .ourWork__text .ourWork__box-title { font-family: "Montserrat", sans-serif; text-transform: uppercase; font-size: 14px; margin: 20px 0 15px; }
+.ourWork .ourWork__content .ourWork__box .ourWork__text .ourWork__box-description { font-style: normal; font-size: 15px; }
+
+p { font-family: "Roboto", sans-serif; color: #999999; font-size: 15px; text-align: center; font-style: normal; }
+
+.section__ourTeam { margin: 100px 0; position: relative; display: flex; flex-direction: column; flex-wrap: wrap; }
+.section__ourTeam .ourTeam__paragraph { margin: 0 0 100px 0; }
+.section__ourTeam .ourTeam { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.section__ourTeam .ourTeam .ourTeam__person { display: flex; flex-direction: column; align-items: center; }
+.section__ourTeam .ourTeam .ourTeam__person .ourTeam__person--foto { margin: 20px; background-color: #95e1d3; width: 380px; bottom: 0; left: 0; -moz-transition: 0.4s; -o-transition: 0.4s; transition: 0.4s; position: relative; }
+.section__ourTeam .ourTeam .ourTeam__person .ourTeam__person--foto:hover { bottom: 4px; right: 4px; background: linear-gradient(to bottom, rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)); }
+.section__ourTeam .ourTeam .ourTeam__person .ourTeam__person--name { font-family: "Montserrat", sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; color: #333333; padding: 0 0 10px 0; }
+.section__ourTeam .ourTeam .ourTeam__person .ourTeam__person--position { font-family: "Roboto", sans-serif; font-size: 15px; color: #999999; font-style: italic; }
+
+.footer { font-size: 14px; font-weight: 700; color: #333333; display: flex; justify-content: space-between; align-content: center; font-family: "Montserrat", sans-serif; border-top: 1px solid #e5e5e5; padding: 10px 0; }
+.footer .footer__link { color: #f38181; }
+.footer .footer__newsletter .footer__input { height: 40px; width: 230px; font-style: italic; border: 1px solid #999999; }
+.footer .footer__newsletter .footer__button { color: #fff; font-size: 14px; font-weight: 700; text-transform: uppercase; background-color: #95e1d3; border: none; width: 150px; height: 40px; cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
